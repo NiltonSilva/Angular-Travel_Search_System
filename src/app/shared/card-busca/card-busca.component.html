@@ -1,13 +1,9 @@
 <mat-card class="card-busca">
-  <img
-    mat-card-image
-    src="./../../../assets/imagens/Veneza.png"
-    alt="Imagem de Veneza - Itália"
-  />
+  <img mat-card-image [src]="src" [alt]="alt" />
   <mat-card-content>
     <ul>
-      <li>Veneza</li>
-      <li>R$ 500,00</li>
+      <li>{{ destino }}</li>
+      <li>R$ {{ valor }}</li>
     </ul>
   </mat-card-content>
   <mat-card-actions>
