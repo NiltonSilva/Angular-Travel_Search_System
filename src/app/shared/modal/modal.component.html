@@ -12,19 +12,15 @@
           <li>Adultos</li>
           <li>(Acima de 12 anos)</li>
           <li>
-            <button (click)="diminuirAdulto()" class="decremento" mat-mini-fab>
-              <img
-                src="./../../../assets/icones/do_not_disturb_on.png"
-                alt="Operador de subtração"
-              />
-            </button>
+            <app-botao-controle
+              (click)="diminuirAdulto()"
+              operacao="decrementar"
+            ></app-botao-controle>
             <span>{{ quantidadeAdultos }}</span>
-            <button (click)="adicionarAdulto()" class="incremento" mat-mini-fab>
-              <img
-                src="./../../../assets/icones/add_circle.png"
-                alt="Operador de soma"
-              />
-            </button>
+            <app-botao-controle
+              (click)="adicionarAdulto()"
+              operacao="incrementar"
+            ></app-botao-controle>
           </li>
         </ul>
       </div>
@@ -33,23 +29,15 @@
           <li>Crianças</li>
           <li>(Entre 2 e 11 anos)</li>
           <li>
-            <button (click)="diminuirCrianca()" class="decremento" mat-mini-fab>
-              <img
-                src="./../../../assets/icones/do_not_disturb_on.png"
-                alt="Operador de subtração"
-              />
-            </button>
+            <app-botao-controle
+              (click)="diminuirCrianca()"
+              operacao="decrementar"
+            ></app-botao-controle>
             <span>{{ quantidadeCriancas }}</span>
-            <button
+            <app-botao-controle
               (click)="adicionarCrianca()"
-              class="incremento"
-              mat-mini-fab
-            >
-              <img
-                src="./../../../assets/icones/add_circle.png"
-                alt="Operador de soma"
-              />
-            </button>
+              operacao="incrementar"
+            ></app-botao-controle>
           </li>
         </ul>
       </div>
@@ -58,19 +46,15 @@
           <li>Bebês</li>
           <li>(Até 2 anos)</li>
           <li>
-            <button (click)="diminuirBebe()" class="decremento" mat-mini-fab>
-              <img
-                src="./../../../assets/icones/do_not_disturb_on.png"
-                alt="Operador de subtração"
-              />
-            </button>
+            <app-botao-controle
+              (click)="diminuirBebe()"
+              operacao="decrementar"
+            ></app-botao-controle>
             <span>{{ quantidadeBebes }}</span>
-            <button (click)="adicionarBebe()" class="incremento" mat-mini-fab>
-              <img
-                src="./../../../assets/icones/add_circle.png"
-                alt="Operador de soma"
-              />
-            </button>
+            <app-botao-controle
+              (click)="adicionarBebe()"
+              operacao="incrementar"
+            ></app-botao-controle>
           </li>
         </ul>
       </div>
