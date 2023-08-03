@@ -1,0 +1,89 @@
+<section class="modal">
+  <div class="container-title-buttonClose">
+    <h1 mat-dialog-title>Viajante</h1>
+    <div class="container-button_close" mat-dialog-actions>
+      <button mat-button mat-dialog-close>Fechar</button>
+    </div>
+  </div>
+  <div mat-dialog-content>
+    <div class="selecao-idade">
+      <div class="idade">
+        <ul>
+          <li>Adultos</li>
+          <li>(Acima de 12 anos)</li>
+          <li>
+            <button (click)="diminuirAdulto()" class="decremento" mat-mini-fab>
+              <img
+                src="./../../../assets/icones/do_not_disturb_on.png"
+                alt="Operador de subtração"
+              />
+            </button>
+            <span>{{ quantidadeAdultos }}</span>
+            <button (click)="adicionarAdulto()" class="incremento" mat-mini-fab>
+              <img
+                src="./../../../assets/icones/add_circle.png"
+                alt="Operador de soma"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="idade">
+        <ul>
+          <li>Crianças</li>
+          <li>(Entre 2 e 11 anos)</li>
+          <li>
+            <button (click)="diminuirCrianca()" class="decremento" mat-mini-fab>
+              <img
+                src="./../../../assets/icones/do_not_disturb_on.png"
+                alt="Operador de subtração"
+              />
+            </button>
+            <span>{{ quantidadeCriancas }}</span>
+            <button
+              (click)="adicionarCrianca()"
+              class="incremento"
+              mat-mini-fab
+            >
+              <img
+                src="./../../../assets/icones/add_circle.png"
+                alt="Operador de soma"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="idade">
+        <ul>
+          <li>Bebês</li>
+          <li>(Até 2 anos)</li>
+          <li>
+            <button (click)="diminuirBebe()" class="decremento" mat-mini-fab>
+              <img
+                src="./../../../assets/icones/do_not_disturb_on.png"
+                alt="Operador de subtração"
+              />
+            </button>
+            <span>{{ quantidadeBebes }}</span>
+            <button (click)="adicionarBebe()" class="incremento" mat-mini-fab>
+              <img
+                src="./../../../assets/icones/add_circle.png"
+                alt="Operador de soma"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h3>Categoria</h3>
+    <mat-chip-listbox>
+      <mat-chip-option selected="">Executiva</mat-chip-option>
+      <mat-chip-option>Econômica</mat-chip-option>
+    </mat-chip-listbox>
+  </div>
+  <div class="container-button_search">
+    <button class="button_search" mat-flat-button color="primary">
+      BUSCAR
+    </button>
+  </div>
+</section>
